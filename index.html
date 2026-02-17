@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人介紹</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">關於我</a></li>
+                <li><a href="#skills">技能</a></li>
+                <li><a href="#contact">聯絡方式</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1>你好，我是 高育萱</h1>
+                <p class="subtitle">工程師</p>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>關於我</h2>
+            <p>畢業於嘉南藥理大學環境永續學院，主修環境工程與科學系環境科技組，擁有理學學士學位。專注於環境工程與環境科技領域，致力於環境永續發展。</p>
+        </section>
+
+        <section id="skills">
+            <h2>技能與專長</h2>
+            <div class="skills-grid">
+                <div class="skill-item" onclick="toggleCertificate()">
+                    <h3>環境工程</h3>
+                    <p class="click-hint">點擊查看證書</p>
+                    <div class="certificate" id="certificate" style="display: none;">
+                        <img src="高育萱嘉藥學士證書掃描拷貝.jpeg" alt="嘉南藥理大學學士學位證書">
+                    </div>
+                </div>
+                <div class="skill-item">環境科學</div>
+                <div class="skill-item">環境科技</div>
+                <div class="skill-item">理學專業</div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>聯絡方式</h2>
+            <p>📧 Email: jinfeng8605@gmail.com</p>
+            <p>📱 電話: 0906843286</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 高育萱. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleCertificate() {
+            const cert = document.getElementById('certificate');
+            if (cert.style.display === 'none') {
+                cert.style.display = 'block';
+            } else {
+                cert.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
