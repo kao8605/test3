@@ -100,7 +100,7 @@
 }
 
 .features-section {
-    background: #f9f9f9;
+    background: #ffffff;
 }
 
 .features-grid {
@@ -236,4 +236,101 @@
 
 .faq-item ul li {
     margin-bottom: 0.5rem;
+}
+
+/* 諮詢前須知樣式 */
+.notice-container {
+    max-width: 900px;
+    margin: 3rem auto;
+}
+
+.notice-item {
+    background: #ffffff;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #4a90e2;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.notice-item h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.notice-item p {
+    color: #333333;
+    line-height: 1.8;
+    text-align: left;
+}
+
+.notice-item ul {
+    color: #333333;
+    line-height: 1.8;
+}
+
+.notice-item ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* 視覺化流程圖樣式 */
+.visual-process {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 3rem auto;
+    max-width: 1200px;
+}
+
+.visual-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.visual-icon {
+    width: 100px;
+    height: 100px;
+    background: #4a90e2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: white;
+    border: 4px dotted #6ba3e8;
+    box-shadow: 0 4px 12px rgba(74, 144, 226, 0.3);
+}
+
+.visual-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4a90e2;
+}
+
+.visual-label {
+    font-size: 1rem;
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+.visual-arrow {
+    font-size: 2rem;
+    color: #4a90e2;
+    margin: 0 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .visual-process {
+        flex-direction: column;
+    }
+    
+    .visual-arrow {
+        transform: rotate(90deg);
+        margin: 0;
+    }
 }
