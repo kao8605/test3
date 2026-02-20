@@ -97,6 +97,27 @@ section {
     position: relative;
 }
 
+/* 首頁 hero 背景圖片 */
+body:has(#hero:not(.with-bg-image):not(.government-hero):not(.website-hero)) #hero {
+    background-image: url('Gemini_Generated_Image_oruxtcoruxtcorux.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body:has(#hero:not(.with-bg-image):not(.government-hero):not(.website-hero)) #hero .hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+body:has(#hero:not(.with-bg-image):not(.government-hero):not(.website-hero)) #hero h1,
+body:has(#hero:not(.with-bg-image):not(.government-hero):not(.website-hero)) #hero .subtitle {
+    color: #333333;
+}
+    justify-content: center;
+    position: relative;
+}
+
 #hero.with-bg-image {
     background-image: url('Gemini_Generated_Image_84jw5d84jw5d84jw.png');
     background-size: cover;
@@ -143,9 +164,10 @@ h2 {
 
 #about p {
     font-size: 1.1rem;
-    text-align: center;
+    text-align: left;
     max-width: 800px;
     margin: 0 auto;
+    margin-bottom: 1rem;
 }
 
 .skills-grid {
@@ -244,4 +266,23 @@ footer {
     height: auto;
     border-radius: 8px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.service-details {
+    list-style: none;
+    text-align: left;
+    margin-top: 1rem;
+    padding: 0 1rem;
+}
+
+.service-details li {
+    padding: 0.5rem 0;
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.service-details li:last-child {
+    border-bottom: none;
 }
