@@ -89,6 +89,11 @@
 .process-item h3 {
     font-size: 1.1rem;
     color: #333333;
+    margin-bottom: 0.2rem;
+    font-weight: normal;
+}
+
+.process-item h3:last-of-type {
     margin-bottom: 1rem;
 }
 
